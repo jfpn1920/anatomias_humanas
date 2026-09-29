@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anatomias humanas</title>
+    <link rel="stylesheet" href="anatomias_humanas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="anatomias_humanas.js" defer></script>
+</head>
+<body>
+    <!-------------------------------------->
+    <!--|estructuracion_anatomias_humanas|-->
+    <!-------------------------------------->
+    <header class="encabezado">
+        <div class="contenido_encabezado">
+            <h1>Anatomía Humana</h1>
+            <p>Conoce y administra diferentes partes del cuerpo humano.</p>
+        </div>
+    </header>
+    <!-------------------------------------->
+    <!--|estructuracion_partes_del_cuerpo|-->
+    <!-------------------------------------->
+    <main class="contenedor_principal">
+        <section class="introduccion">
+            <h2>Partes del cuerpo</h2>
+            <p>Observa, identifica y personaliza la información.</p>
+        </section>
+        <!-------------------------------------->
+        <!--|contenedor_con_partes_del_cuerpo|-->
+        <!-------------------------------------->
+        <section class="contenedor_partes" id="contenedorPartes">
+            <article class="tarjeta_parte" data-id="1">
+                <div class="imagen_contenedor">
+                    <img class="imagen_parte" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Human_brain.png" alt="Cerebro humano">
+                </div>
+                <h3 class="nombre_parte">Cerebro</h3>
+                <p class="categoria_parte">Sistema nervioso</p>
+                <div class="informacion_parte">
+                    <p class="descripcion_parte">Órgano encargado de controlar diferentes funciones del cuerpo.</p>
+                </div>
+                <div class="formulario_parte">
+                    <label for="nombre1">Nombre</label>
+                    <input id="nombre1" class="campo_nombre" type="text">
+                    <label for="categoria1">Categoría</label>
+                    <input id="categoria1" class="campo_categoria" type="text">
+                    <label for="descripcion1">Descripción</label>
+                    <textarea id="descripcion1" class="campo_descripcion"></textarea>
+                    <label for="imagen1">Imagen</label>
+                    <input id="imagen1" class="campo_imagen" type="url">
+                </div>
+                <div class="acciones">
+                    <button class="boton_guardar">Guardar</button>
+                    <button class="boton_restaurar">Restaurar</button>
+                </div>
+                <p class="mensaje"></p>
+            </article>
+            <article class="tarjeta_parte" data-id="2">
+                <div class="imagen_contenedor">
+                    <img class="imagen_parte" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Diagram_of_the_human_heart.svg" alt="Corazón humano">
+                </div>
+                <h3 class="nombre_parte">Corazón</h3>
+                <p class="categoria_parte">Sistema circulatorio</p>
+                <div class="informacion_parte">
+                    <p class="descripcion_parte">Órgano muscular que impulsa la sangre por todo el organismo.</p>
+                </div>
+                <div class="formulario_parte">
+                    <label for="nombre2">Nombre</label>
+                    <input id="nombre2" class="campo_nombre" type="text">
+                    <label for="categoria2">Categoría</label>
+                    <input id="categoria2" class="campo_categoria" type="text">
+                    <label for="descripcion2">Descripción</label>
+                    <textarea id="descripcion2" class="campo_descripcion"></textarea>
+                    <label for="imagen2">Imagen</label>
+                    <input id="imagen2" class="campo_imagen" type="url">
+                </div>
+                <div class="acciones">
+                    <button class="boton_guardar">Guardar</button>
+                    <button class="boton_restaurar">Restaurar</button>
+                </div>
+                <p class="mensaje"></p>
+            </article>
+            <article class="tarjeta_parte" data-id="3">
+                <div class="imagen_contenedor">
+                    <img class="imagen_parte" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Lungs_diagram_simple.svg" alt="Pulmones humanos">
+                </div>
+                <h3 class="nombre_parte">Pulmones</h3>
+                <p class="categoria_parte">Sistema respiratorio</p>
+                <div class="informacion_parte">
+                    <p class="descripcion_parte">Órganos que permiten realizar el intercambio de gases durante la respiración.</p>
+                </div>
+                <div class="formulario_parte">
+                    <label for="nombre3">Nombre</label>
+                    <input id="nombre3" class="campo_nombre" type="text">
+                    <label for="categoria3">Categoría</label>
+                    <input id="categoria3" class="campo_categoria" type="text">
+                    <label for="descripcion3">Descripción</label>
+                    <textarea id="descripcion3" class="campo_descripcion"></textarea>
+                    <label for="imagen3">Imagen</label>
+                    <input id="imagen3" class="campo_imagen" type="url">
+                </div>
+                <div class="acciones">
+                    <button class="boton_guardar">Guardar</button>
+                    <button class="boton_restaurar">Restaurar</button>
+                </div>
+                <p class="mensaje"></p>
+            </article>
+        </section>
+        <!------------------------>
+        <!--|acciones_generales|-->
+        <!------------------------>
+        <section class="zona_final">
+            <button id="restablecerTodos">Restablecer todas las partes</button>
+            <p id="mensajeGeneral"></p>
+        </section>
+    </main>
+</body>
+</html>
